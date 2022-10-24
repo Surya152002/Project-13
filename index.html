@@ -1,0 +1,15 @@
+<div id="details"></div>
+<div id=".speed-value"></div>
+
+<script>
+    var reqcount = 0;
+    const spe = document.querySelector('.speed-value');
+    navigator.geolocation.watchPosition((data)=>{
+        const spe=data.coords.speed;
+        console.log(data);
+        details.innerHTML= "Speedc: "+spe ;
+        
+        
+    });
+    
+</script>
