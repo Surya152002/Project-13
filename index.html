@@ -5,7 +5,7 @@
     var reqcount = 0;
     const spe = document.querySelector('.speed-value');
     navigator.geolocation.watchPosition((data)=>{
-        const spe=data.coords.speed;
+        const spe=(data.coords.speed)*100;
         console.log(data);
         details.innerHTML= "Speedc: "+spe ;
         
